@@ -51,6 +51,13 @@ app.get('/about',(req,res) =>{
   });
 });
 
+app.get('/projects',(req,res) =>{
+  res.render('projects.hbs', {
+    siteTitle: 'Projects - Zirena',
+    pageTitle: 'Projects'
+  });
+});
+
 /*
 app.get('/maintenance',(req,res) =>{
   res.render('maintenance.hbs', {
